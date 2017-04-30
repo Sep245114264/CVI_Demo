@@ -1,0 +1,12 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[Close]
+Class="Function"
+Prototype="int Close(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Timer]
+Class="Function"
+Prototype="int Timer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

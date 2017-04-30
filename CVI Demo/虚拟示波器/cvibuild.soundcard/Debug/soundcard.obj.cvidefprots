@@ -1,0 +1,20 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[WaveInProc]
+Class="Function"
+Prototype="void WaveInProc(struct HWAVEIN__ *hwi, unsigned int uMsg, unsigned long dwUser, unsigned long dwl, unsigned long dw2);"
+
+[PanelCall]
+Class="Function"
+Prototype="int PanelCall(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Start]
+Class="Function"
+Prototype="int Start(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Stop]
+Class="Function"
+Prototype="int Stop(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

@@ -1,0 +1,20 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[Panel]
+Class="Function"
+Prototype="int Panel(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Button]
+Class="Function"
+Prototype="int Button(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Export]
+Class="Function"
+Prototype="int Export(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[directory]
+Class="Function"
+Prototype="int directory(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

@@ -1,0 +1,43 @@
+CCFLAGS = -g ;
+HDRS = 	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\activex\\word"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\activex\\excel"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\custctrl"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\custctrl\\custsupp"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\cvirtsup"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\datasock"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\daqUtil"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\printing"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\toolbox"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\reportgen"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\localui"
+	"d:\\cvi\\national instruments\\cvi2015\\instr"
+	"D:\\CVI\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"D:\\CVI\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"D:\\CVI\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\instr"
+	"d:\\cvi\\national instruments\\cvi2015\\include"
+	"D:\\CVI\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"d:\\cvi\\national instruments\\cvi2015\\include\\ansi"
+	"d:\\cvi\\national instruments\\cvi2015\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"D:\\CVI\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"d:\\CVI\\National Instruments\\CVI2015\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2015\\bin"
+	"d:\\CVI\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "UI.c" = "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测" ;
+LOCATE on "UI.h" = "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测" ;
+Object "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测\\cvibuild.UI\\Debug\\UI.obj" : "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测\\UI.c" ;
+FILENUM on "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测\\cvibuild.UI\\Debug\\UI.obj" = 1 ;
+DEFPROTS on "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测\\cvibuild.UI\\Debug\\UI.obj" = "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测\\cvibuild.UI\\Debug\\UI.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测\\cvibuild.UI\\Debug\\UI.obj" = "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测\\cvibuild.UI\\Debug\\UI.obj.out" ;
+PrjObjects += "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测\\cvibuild.UI\\Debug\\UI.obj" ;
+Object "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测\\cvibuild.UI\\Debug\\resources.res" : "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测\\cvibuild.UI\\Debug\\resources.in.rc" ;
+MainFromObjects "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测\\cvibuild.UI\\Debug\\UI.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测\\cvibuild.UI\\Debug\\UI.exe" : "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测\\cvibuild.UI\\Debug\\link_options.txt" ;
+Depends "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测\\cvibuild.UI\\Debug\\UI.exe" : "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测\\cvibuild.UI\\Debug\\resources.res" ;
+Depends all : "c:\\Users\\hp\\Desktop\\Demo\\电梯环境检测\\cvibuild.UI\\Debug\\UI.exe" ;

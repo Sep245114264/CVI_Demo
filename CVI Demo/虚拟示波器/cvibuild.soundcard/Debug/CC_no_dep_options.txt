@@ -1,0 +1,1 @@
+-force-include-file "soundcard.c";"c:\Users\hp\Desktop\ÐéÄâÊ¾²¨Æ÷\soundcard.c" -force-include-file "soundcard.h";"c:\Users\hp\Desktop\ÐéÄâÊ¾²¨Æ÷\soundcard.h" 

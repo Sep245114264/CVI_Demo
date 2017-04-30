@@ -1,0 +1,1 @@
+-force-include-file "test.c";"c:\Users\hp\Desktop\温度监测\test.c" -force-include-file "温度监测.h";"c:\Users\hp\Desktop\温度监测\温度监测.h" 

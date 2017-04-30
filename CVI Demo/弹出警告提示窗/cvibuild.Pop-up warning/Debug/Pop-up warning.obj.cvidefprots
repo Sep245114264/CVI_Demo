@@ -1,0 +1,16 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[Monitor]
+Class="Function"
+Prototype="int Monitor(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Quit]
+Class="Function"
+Prototype="int Quit(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[DisplayComPortErr]
+Class="Function"
+Prototype="void DisplayComPortErr();"
+

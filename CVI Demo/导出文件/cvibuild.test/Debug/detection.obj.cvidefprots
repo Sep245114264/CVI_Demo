@@ -1,0 +1,8 @@
+[AddRecordToTable]
+Class="Function"
+Prototype="void AddRecordToTable(int panel, int control, float temperature, float ponding);"
+
+[ExportHistory]
+Class="Function"
+Prototype="void ExportHistory(int panel, int control, int record_num, int other);"
+

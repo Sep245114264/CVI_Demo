@@ -1,0 +1,363 @@
+[Workspace Header]
+Version = 1500
+Pathname = "/c/Users/hp/Desktop/Demo/电梯环境检测/UI.cws"
+CVI Dir = "/d/cvi/national instruments/cvi2015"
+CVI Shared Dir = "/D/CVI/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2015"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "UI.prj"
+Drag Bar Left = 312
+Window Top = 31
+Window Left = 193
+Window Bottom = 720
+Window Right = 860
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 4
+Window Confinement Region Enabled = True
+MainColumnWidth = 295
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1500
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Debug"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/c/Users/hp/Desktop/Demo/电梯环境检测/UI.uir"
+File Type = "User Interface Resource"
+Disk Date = 3570514845
+In Projects = "1,"
+Window Top = 64
+Window Left = 26
+Window Height = 299
+Window Width = 688
+Window Z-Order = 2
+
+[File 0002]
+Path = "/c/Users/hp/Desktop/Demo/电梯环境检测/UI.c"
+File Type = "CSource"
+Disk Date = 3570950986
+In Projects = "1,"
+Window Top = 33
+Window Left = 10
+Window Z-Order = 1
+Source Window State = "1,295,308,308,0,0,2,0,0,126,0,70,0,1,0,24,217,0,226,16,407,688,1,22,"
+
+[File 0003]
+Path = "/d/CVI/National Instruments/CVI2015/include/ansi/stdlib.h"
+File Type = "Include"
+Disk Date = 3517405200
+In Projects = ""
+Window Top = 33
+Window Left = 10
+Window Z-Order = 4
+Source Window State = "1,0,0,0,0,0,0,0,0,80,0,0,0,0,0,15,86,0,93,0,299,688,1,0,"
+
+[File 0004]
+Path = "/d/CVI/National Instruments/CVI2015/include/rs232.h"
+File Type = "Include"
+Disk Date = 3517405200
+In Projects = ""
+Window Top = 64
+Window Left = 26
+Window Z-Order = 3
+Source Window State = "1,88,88,88,15,49,49,0,0,80,0,0,0,0,0,15,76,0,87,37,299,688,1,0,"
+
+[File 0005]
+Path = "/c/Users/hp/Desktop/Demo/电梯环境检测/UI.h"
+File Type = "Include"
+Disk Date = 3570514845
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[Tab Order]
+Tab 0001 = "/c/Users/hp/Desktop/Demo/电梯环境检测/UI.c"
+Tab 0002 = "/c/Users/hp/Desktop/Demo/电梯环境检测/UI.uir"
+Tab 0003 = "/d/CVI/National Instruments/CVI2015/include/ansi/stdlib.h"
+Tab 0004 = "/d/CVI/National Instruments/CVI2015/include/rs232.h"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+
+[Watch 1]
+Watch Expression = "COM_PORT1"
+
+[Watch 2]
+Watch Expression = "FlushInQ"
+
+[Watch 3]
+Watch Expression = "first"
+
+[Watch 4]
+Watch Expression = "COM_PORT1"
+
+[Watch 5]
+Watch Expression = "FlushInQ"
+
+[Watch 6]
+Watch Expression = "first"
+
+[Watch 7]
+Watch Expression = "COM_PORT1"
+
+[Watch 8]
+Watch Expression = "FlushInQ"
+
+[Watch 9]
+Watch Expression = "first"
+
+[Watch 10]
+Watch Expression = "COM_PORT1"
+
+[Watch 11]
+Watch Expression = "FlushInQ"
+
+[Watch 12]
+Watch Expression = "first"
+
+[Watch 13]
+Watch Expression = "COM_PORT1"
+
+[Watch 14]
+Watch Expression = "FlushInQ"
+
+[Watch 15]
+Watch Expression = "first"
+
+[Watch 16]
+Watch Expression = "COM_PORT1"
+
+[Watch 17]
+Watch Expression = "FlushInQ"
+
+[Watch 18]
+Watch Expression = "first"
+
+[Watch 19]
+Watch Expression = "COM_PORT1"
+
+[Watch 20]
+Watch Expression = "FlushInQ"
+
+[Watch 21]
+Watch Expression = "first"
+
+[Watch 22]
+Watch Expression = "COM_PORT1"
+
+[Watch 23]
+Watch Expression = "FlushInQ"
+
+[Watch 24]
+Watch Expression = "first"
+
+[Watch 25]
+Watch Expression = "COM_PORT1"
+
+[Watch 26]
+Watch Expression = "FlushInQ"
+
+[Watch 27]
+Watch Expression = "first"
+
+[Watch 28]
+Watch Expression = "COM_PORT1"
+
+[Watch 29]
+Watch Expression = "FlushInQ"
+
+[Watch 30]
+Watch Expression = "first"
+
+[Watch 31]
+Watch Expression = "COM_PORT1"
+
+[Watch 32]
+Watch Expression = "FlushInQ"
+
+[Watch 33]
+Watch Expression = "first"
+
+[Watch 34]
+Watch Expression = "COM_PORT1"
+
+[Watch 35]
+Watch Expression = "FlushInQ"
+
+[Watch 36]
+Watch Expression = "first"
+
+[Watch 37]
+Watch Expression = "COM_PORT1"
+
+[Watch 38]
+Watch Expression = "FlushInQ"
+
+[Watch 39]
+Watch Expression = "first"
+
+[Watch 40]
+Watch Expression = "COM_PORT1"
+
+[Watch 41]
+Watch Expression = "FlushInQ"
+
+[Watch 42]
+Watch Expression = "first"
+
+[Watch 43]
+Watch Expression = "COM_PORT1"
+
+[Watch 44]
+Watch Expression = "FlushInQ"
+
+[Watch 45]
+Watch Expression = "first"
+
+[Watch 46]
+Watch Expression = "COM_PORT1"
+
+[Watch 47]
+Watch Expression = "FlushInQ"
+
+[Watch 48]
+Watch Expression = "first"
+
+[Watch 49]
+Watch Expression = "COM_PORT1"
+
+[Watch 50]
+Watch Expression = "FlushInQ"
+
+[Watch 51]
+Watch Expression = "first"
+
+[Watch 52]
+Watch Expression = "COM_PORT1"
+
+[Watch 53]
+Watch Expression = "FlushInQ"
+
+[Watch 54]
+Watch Expression = "first"
+
+[Watch 55]
+Watch Expression = "COM_PORT1"
+
+[Watch 56]
+Watch Expression = "FlushInQ"
+
+[Watch 57]
+Watch Expression = "first"
+
+[Watch 58]
+Watch Expression = "buf"
+

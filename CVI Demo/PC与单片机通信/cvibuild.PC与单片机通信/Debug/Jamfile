@@ -1,0 +1,43 @@
+CCFLAGS = -g ;
+HDRS = 	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\activex\\word"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\activex\\excel"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\custctrl"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\custctrl\\custsupp"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\cvirtsup"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\datasock"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\daqUtil"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\printing"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\toolbox"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\reportgen"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\localui"
+	"d:\\cvi\\national instruments\\cvi2015\\instr"
+	"D:\\CVI\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"D:\\CVI\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"D:\\CVI\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\instr"
+	"d:\\cvi\\national instruments\\cvi2015\\include"
+	"D:\\CVI\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"d:\\cvi\\national instruments\\cvi2015\\include\\ansi"
+	"d:\\cvi\\national instruments\\cvi2015\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"D:\\CVI\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"d:\\CVI\\National Instruments\\CVI2015\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2015\\bin"
+	"d:\\CVI\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "PC与单片机通信.c" = "c:\\Users\\hp\\Desktop\\PC与单片机通信" ;
+LOCATE on "PC与单片机通信.h" = "c:\\Users\\hp\\Desktop\\PC与单片机通信" ;
+Object "c:\\Users\\hp\\Desktop\\PC与单片机通信\\cvibuild.PC与单片机通信\\Debug\\PC与单片机通信.obj" : "c:\\Users\\hp\\Desktop\\PC与单片机通信\\PC与单片机通信.c" ;
+FILENUM on "c:\\Users\\hp\\Desktop\\PC与单片机通信\\cvibuild.PC与单片机通信\\Debug\\PC与单片机通信.obj" = 1 ;
+DEFPROTS on "c:\\Users\\hp\\Desktop\\PC与单片机通信\\cvibuild.PC与单片机通信\\Debug\\PC与单片机通信.obj" = "c:\\Users\\hp\\Desktop\\PC与单片机通信\\cvibuild.PC与单片机通信\\Debug\\PC与单片机通信.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\hp\\Desktop\\PC与单片机通信\\cvibuild.PC与单片机通信\\Debug\\PC与单片机通信.obj" = "c:\\Users\\hp\\Desktop\\PC与单片机通信\\cvibuild.PC与单片机通信\\Debug\\PC与单片机通信.obj.out" ;
+PrjObjects += "c:\\Users\\hp\\Desktop\\PC与单片机通信\\cvibuild.PC与单片机通信\\Debug\\PC与单片机通信.obj" ;
+Object "c:\\Users\\hp\\Desktop\\PC与单片机通信\\cvibuild.PC与单片机通信\\Debug\\resources.res" : "c:\\Users\\hp\\Desktop\\PC与单片机通信\\cvibuild.PC与单片机通信\\Debug\\resources.in.rc" ;
+MainFromObjects "c:\\Users\\hp\\Desktop\\PC与单片机通信\\cvibuild.PC与单片机通信\\Debug\\PC与单片机通信.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\Users\\hp\\Desktop\\PC与单片机通信\\cvibuild.PC与单片机通信\\Debug\\PC与单片机通信.exe" : "c:\\Users\\hp\\Desktop\\PC与单片机通信\\cvibuild.PC与单片机通信\\Debug\\link_options.txt" ;
+Depends "c:\\Users\\hp\\Desktop\\PC与单片机通信\\cvibuild.PC与单片机通信\\Debug\\PC与单片机通信.exe" : "c:\\Users\\hp\\Desktop\\PC与单片机通信\\cvibuild.PC与单片机通信\\Debug\\resources.res" ;
+Depends all : "c:\\Users\\hp\\Desktop\\PC与单片机通信\\cvibuild.PC与单片机通信\\Debug\\PC与单片机通信.exe" ;

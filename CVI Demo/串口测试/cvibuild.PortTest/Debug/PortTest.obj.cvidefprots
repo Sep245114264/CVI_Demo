@@ -1,0 +1,24 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[PanelCB]
+Class="Function"
+Prototype="int PanelCB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SendData]
+Class="Function"
+Prototype="int SendData(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ReceiveData]
+Class="Function"
+Prototype="int ReceiveData(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Quit]
+Class="Function"
+Prototype="int Quit(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Event_Char_Detect_Func]
+Class="Function"
+Prototype="void Event_Char_Detect_Func(int portNo, int eventMask, void *callbackData);"
+

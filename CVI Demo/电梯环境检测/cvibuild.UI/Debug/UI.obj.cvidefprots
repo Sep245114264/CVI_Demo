@@ -1,0 +1,44 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[InfoRead]
+Class="Function"
+Prototype="int InfoRead(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Quit]
+Class="Function"
+Prototype="int Quit(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Log]
+Class="Function"
+Prototype="int Log(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[QUIT_LOG]
+Class="Function"
+Prototype="int QUIT_LOG(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[PanelMain]
+Class="Function"
+Prototype="int PanelMain(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[PanelLog]
+Class="Function"
+Prototype="int PanelLog(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Monitor]
+Class="Function"
+Prototype="int Monitor(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[AddRecordToTable]
+Class="Function"
+Prototype="void AddRecordToTable(int panel, int control, int record_num, float temperature);"
+
+[Export]
+Class="Function"
+Prototype="int Export(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[DisplayErrorMessage]
+Class="Function"
+Prototype="void DisplayErrorMessage();"
+

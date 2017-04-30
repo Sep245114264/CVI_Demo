@@ -1,0 +1,49 @@
+CCFLAGS = -g ;
+HDRS = 	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\activex\\word"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\activex\\excel"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\custctrl"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\custctrl\\custsupp"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\cvirtsup"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\datasock"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\daqUtil"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\printing"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\toolbox"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\reportgen"
+	"d:\\cvi\\national instruments\\cvi2015\\toolslib\\localui"
+	"d:\\cvi\\national instruments\\cvi2015\\instr"
+	"D:\\CVI\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"D:\\CVI\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"D:\\CVI\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\instr"
+	"d:\\cvi\\national instruments\\cvi2015\\include"
+	"D:\\CVI\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"d:\\cvi\\national instruments\\cvi2015\\include\\ansi"
+	"d:\\cvi\\national instruments\\cvi2015\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"D:\\CVI\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"d:\\CVI\\National Instruments\\CVI2015\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2015\\bin"
+	"d:\\CVI\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "detection.c" = "c:\\Users\\hp\\Desktop\\新建文件夹" ;
+LOCATE on "test.c" = "c:\\Users\\hp\\Desktop\\新建文件夹" ;
+LOCATE on "test.h" = "c:\\Users\\hp\\Desktop\\新建文件夹" ;
+Object "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\detection.obj" : "c:\\Users\\hp\\Desktop\\新建文件夹\\detection.c" ;
+FILENUM on "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\detection.obj" = 1 ;
+DEFPROTS on "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\detection.obj" = "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\detection.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\detection.obj" = "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\detection.obj.out" ;
+PrjObjects += "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\detection.obj" ;
+Object "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\test.obj" : "c:\\Users\\hp\\Desktop\\新建文件夹\\test.c" ;
+FILENUM on "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\test.obj" = 2 ;
+DEFPROTS on "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\test.obj" = "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\test.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\test.obj" = "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\test.obj.out" ;
+PrjObjects += "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\test.obj" ;
+Object "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\resources.res" : "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\resources.in.rc" ;
+MainFromObjects "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\test.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\test.exe" : "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\link_options.txt" ;
+Depends "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\test.exe" : "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\resources.res" ;
+Depends all : "c:\\Users\\hp\\Desktop\\新建文件夹\\cvibuild.test\\Debug\\test.exe" ;
