@@ -712,8 +712,10 @@ int CVICALLBACK TimerSave (int panel, int control, int event,
 				GetTableCellVal(panelHandle, PANEL_TABLE_PONDING, MakePoint(2, row), flag);
 				fprintf(file_ponding, "%s	 	%s\n", date, flag);
 			}
+			fclose(file_voltage);
 			fclose(file_temperature);
 			fclose(file_ponding);
+			DeleteTableRows(panelHandle, PANEL_TABLE_VOLTAGE, 1, -1);
 			DeleteTableRows (panelHandle, PANEL_TABLE_TEMPERATURE, 1, -1);
 			DeleteTableRows(panelHandle, PANEL_TABLE_PONDING, 1, -1);
 			break;			

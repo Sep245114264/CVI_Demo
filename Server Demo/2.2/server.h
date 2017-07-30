@@ -22,29 +22,32 @@
 #define  PANEL_START_MONITOR              6       /* control type: command, callback function: StartMonitor */
 #define  PANEL_DECORATION_3               7       /* control type: deco, callback function: (none) */
 #define  PANEL_STOPMONITOR                8       /* control type: command, callback function: StopMonitor */
-#define  PANEL_TIMERTRANSMIT              9       /* control type: timer, callback function: TimerTransmit */
-#define  PANEL_MAX_VOLTAGE                10      /* control type: numeric, callback function: (none) */
-#define  PANEL_STATE_VOLTAGE              11      /* control type: LED, callback function: (none) */
-#define  PANEL_MIN_VOLTAGE                12      /* control type: numeric, callback function: (none) */
-#define  PANEL_MAX_TEMPERATURE            13      /* control type: numeric, callback function: (none) */
-#define  PANEL_MIN_TEMPERATURE            14      /* control type: numeric, callback function: (none) */
-#define  PANEL_STATE_TEMPERATURE          15      /* control type: LED, callback function: (none) */
-#define  PANEL_STATE_MONITOR              16      /* control type: LED, callback function: (none) */
-#define  PANEL_DATE                       17      /* control type: string, callback function: (none) */
-#define  PANEL_TIME                       18      /* control type: string, callback function: (none) */
-#define  PANEL_DECORATION                 19      /* control type: deco, callback function: (none) */
-#define  PANEL_TABLE_TEMPERATURE          20      /* control type: table, callback function: ResultTemperature */
-#define  PANEL_TABLE_PONDING              21      /* control type: table, callback function: ResultPonding */
-#define  PANEL_TABLE_VOLTAGE              22      /* control type: table, callback function: ResultVoltage */
-#define  PANEL_BUTTON_LOG                 23      /* control type: command, callback function: Log */
-#define  PANEL_DECORATION_2               24      /* control type: deco, callback function: (none) */
-#define  PANEL_CHART_TEMPERATURE          25      /* control type: strip, callback function: (none) */
-#define  PANEL_CHART_VOLTAGE              26      /* control type: strip, callback function: (none) */
-#define  PANEL_TIMER_SAVE                 27      /* control type: timer, callback function: TimerSave */
-#define  PANEL_TIMER_DISPLAY              28      /* control type: timer, callback function: TimerDisplay */
+#define  PANEL_MAX_VOLTAGE                9       /* control type: numeric, callback function: (none) */
+#define  PANEL_STATE_VOLTAGE              10      /* control type: LED, callback function: (none) */
+#define  PANEL_MIN_VOLTAGE                11      /* control type: numeric, callback function: (none) */
+#define  PANEL_MAX_TEMPERATURE            12      /* control type: numeric, callback function: (none) */
+#define  PANEL_MIN_TEMPERATURE            13      /* control type: numeric, callback function: (none) */
+#define  PANEL_STATE_TEMPERATURE          14      /* control type: LED, callback function: (none) */
+#define  PANEL_STATE_MONITOR              15      /* control type: LED, callback function: (none) */
+#define  PANEL_DATE                       16      /* control type: string, callback function: (none) */
+#define  PANEL_TIME                       17      /* control type: string, callback function: (none) */
+#define  PANEL_DECORATION                 18      /* control type: deco, callback function: (none) */
+#define  PANEL_TABLE_TEMPERATURE          19      /* control type: table, callback function: ResultTemperature */
+#define  PANEL_TABLE_PONDING              20      /* control type: table, callback function: ResultPonding */
+#define  PANEL_TABLE_VOLTAGE              21      /* control type: table, callback function: ResultVoltage */
+#define  PANEL_BUTTON_LOG                 22      /* control type: command, callback function: Log */
+#define  PANEL_DECORATION_2               23      /* control type: deco, callback function: (none) */
+#define  PANEL_CHART_TEMPERATURE          24      /* control type: strip, callback function: (none) */
+#define  PANEL_CHART_VOLTAGE              25      /* control type: strip, callback function: (none) */
+#define  PANEL_TIMER_SAVE                 26      /* control type: timer, callback function: TimerSave */
+#define  PANEL_TIMER_DISPLAY              27      /* control type: timer, callback function: TimerDisplay */
+#define  PANEL_CHART_PONDING              28      /* control type: strip, callback function: (none) */
 #define  PANEL_BUTTON_CLOSE               29      /* control type: command, callback function: ButtonClose */
-#define  PANEL_CHART_PONDING              30      /* control type: strip, callback function: (none) */
-#define  PANEL_DECORATION_5               31      /* control type: deco, callback function: (none) */
+#define  PANEL_SAVEPONDING                30      /* control type: command, callback function: SavePonding */
+#define  PANEL_SAVETEMPERATURE            31      /* control type: command, callback function: SaveTemperature */
+#define  PANEL_SAVEVOLTAGE                32      /* control type: command, callback function: SaveVoltage */
+#define  PANEL_DECORATION_5               33      /* control type: deco, callback function: (none) */
+#define  PANEL_TIMERTRANSMIT              34      /* control type: timer, callback function: TimerTransmit */
 
 #define  PANELLOG                         2       /* callback function: Panel_log */
 #define  PANELLOG_LOG                     2       /* control type: textBox, callback function: (none) */
@@ -69,6 +72,9 @@ int  CVICALLBACK Panel_log(int panel, int event, void *callbackData, int eventDa
 int  CVICALLBACK ResultPonding(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK ResultTemperature(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK ResultVoltage(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK SavePonding(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK SaveTemperature(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK SaveVoltage(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK StartMonitor(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK StopMonitor(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
 int  CVICALLBACK TimerDisplay(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);

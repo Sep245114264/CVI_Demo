@@ -27,7 +27,7 @@ typedef struct
 enum InfIndex
 {
 	NO_ACTION = 0,
-	READ_VOLTAGE = 1,
+	READ_VOLTAGE = 3,
 	READ_TEMPERATURE = 5,
 	READ_STATE_PONDING = 4
 };
@@ -232,7 +232,13 @@ int CVICALLBACK ServerTCP(unsigned int handle, int event, int error, void * call
 			
 			// 记录信息
 			record_data(receive_buf, RECEIVE_DATA, NO_ACTION);
-									   
+			
+			/*for( i = 0; i < 5000; ++i )
+			{
+				for( j = 0; j < 2000; ++j )
+				{
+				}
+			}*/				
 			// 解包并进行CRC校验
 			unpack_data = unPack(receive_buf);
 			
@@ -417,7 +423,9 @@ void Read_Voltage(void)
 	
 	if( ServerTCPWrite(hconversation, transmit_buf, 8, 100) < 0 )
 	{
-		MessagePopup("警告", "发送失败");
+		MessagePopup("警告", "发送失败,请等待下位机连接......");
+		SetCtrlVal(panelHandle, PANEL_STATE_MONITOR, 0);
+		start = 0;
 		//return -1;
 	}
 	else
@@ -439,7 +447,9 @@ void Read_Temperature(void)
 	
 	if( ServerTCPWrite(hconversation, transmit_buf, 8, 100) < 0 )
 	{
-		MessagePopup("警告", "发送失败");
+		MessagePopup("警告", "发送失败, 请等待下位机连接......");
+		start = 0;
+		SetCtrlVal(panelHandle, PANEL_STATE_MONITOR, 0);
 		//return -1;
 	}
 	else
@@ -461,7 +471,9 @@ void Read_StatePonding(void)
 
 	if( ServerTCPWrite(hconversation, transmit_buf, 8, 5000) < 0 )
 	{
-		MessagePopup("警告", "查询发送失败");
+		MessagePopup("警告", "查询发送失败，请等待下位机连接......");
+		start = 0;
+		SetCtrlVal(panelHandle, PANEL_STATE_MONITOR, 0);
 		//return -1;
 	}
 	else
@@ -748,7 +760,7 @@ int CVICALLBACK TimerDisplay (int panel, int control, int event,
 
 void data_read(void)
 {
-	FILE * file_ponding;
+	FILE * file_temperature;
 	int i;
 	int count = 0;
 	char ch;
@@ -757,27 +769,27 @@ void data_read(void)
 	char time[1024] = {0};
 	char data[1024] = {0};
 	char flag[4] = {0};
-	file_ponding = fopen("积水.txt", "r");
-	while( (ch = fgetc(file_ponding)) != EOF )
+	file_temperature = fopen("温度.txt", "r");
+	while( (ch = fgetc(file_temperature)) != EOF )
 	{
 		if( ch == '\n' )
 		{
 			++count;
 		}
 	}
-	fseek(file_ponding, 0, SEEK_SET);
+	fseek(file_temperature, 0, SEEK_SET);
 	for( i = 0; i < count; ++i )
 	{
-		fscanf(file_ponding, "%s  %s		%s", date, time, flag);
+		fscanf(file_temperature, "%s  %s		%s		%s", date, time, flag);
 		sprintf(dateTime, "%s  %s", date, time);
 		//新加一行
-		InsertTableRows (panelHandle, PANEL_TABLE_PONDING, 1, 1, VAL_USE_MASTER_CELL_TYPE);
+		InsertTableRows (panelHandle, PANEL_TABLE_TEMPERATURE, 1, 1, VAL_USE_MASTER_CELL_TYPE);
 		// 设置数据
-		SetTableCellVal(panelHandle, PANEL_TABLE_PONDING, MakePoint(1, 1), dateTime);
-		SetTableCellVal(panelHandle, PANEL_TABLE_PONDING, MakePoint(2, 1), flag);
-		//SetTableCellVal(panelHandle, PANEL_TABLE_PONDING, MakePoint(3, 1), flag);
+		SetTableCellVal(panelHandle, PANEL_TABLE_TEMPERATURE, MakePoint(1, 1), dateTime);
+		SetTableCellVal(panelHandle, PANEL_TABLE_TEMPERATURE, MakePoint(2, 1), data);
+		SetTableCellVal(panelHandle, PANEL_TABLE_TEMPERATURE, MakePoint(3, 1), flag);
 	}
-	fclose(file_ponding);
+	fclose(file_temperature);
 }
 
 int CVICALLBACK ResultVoltage (int panel, int control, int event,
@@ -957,7 +969,7 @@ int CVICALLBACK ResultPonding (int panel, int control, int event,
 									   SortByWarning, 0);
 						break;
 					default:
-						assert(0);
+						//assert(0);
 						break;
 				}
 			}
@@ -1143,4 +1155,40 @@ void QuickExe(void)
 	file_ponding = fopen(fp_name, "a+");
 	fprintf(file_ponding, "%s\n", "------------------------------------");
 	fclose(file_ponding);
+}
+
+int CVICALLBACK SaveVoltage (int panel, int control, int event,
+		void *callbackData, int eventData1, int eventData2)
+{
+	switch (event)
+	{
+		case EVENT_COMMIT:
+
+			break;
+	}
+	return 0;
+}
+
+int CVICALLBACK SaveTemperature (int panel, int control, int event,
+		void *callbackData, int eventData1, int eventData2)
+{
+	switch (event)
+	{
+		case EVENT_COMMIT:
+
+			break;
+	}
+	return 0;
+}
+
+int CVICALLBACK SavePonding (int panel, int control, int event,
+		void *callbackData, int eventData1, int eventData2)
+{
+	switch (event)
+	{
+		case EVENT_COMMIT:
+
+			break;
+	}
+	return 0;
 }
