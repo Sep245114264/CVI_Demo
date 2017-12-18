@@ -1,6 +1,6 @@
 [Workspace Header]
 Version = 1201
-Pathname = "/c/Users/hp/Desktop/Server Demo/final/server.cws"
+Pathname = "/i/CVI Demo/CVI_Demo/Server Demo/final/server.cws"
 CVI Dir = "/d/national instruments/cvi2012"
 CVI Shared Dir = "/D/National Instruments/Shared/CVI"
 CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2012"
@@ -13,10 +13,10 @@ Number of Projects = 1
 Active Project = 1
 Project 0001 = "server.prj"
 Drag Bar Left = 215
-Window Top = 157
-Window Left = 363
-Window Bottom = 659
-Window Right = 1153
+Window Top = 31
+Window Left = 639
+Window Bottom = 533
+Window Right = 1429
 Maximized = True
 Maximized Children = True
 Max32 Number Of Errors = 20
@@ -48,7 +48,7 @@ Batch Build Debug = False
 Force Rebuild = False
 
 [File 0001]
-Path = "/c/Users/hp/Desktop/Server Demo/final/server.uir"
+Path = "/i/CVI Demo/CVI_Demo/Server Demo/final/server.uir"
 File Type = "User Interface Resource"
 Disk Date = 3584244100
 In Projects = "1,"
@@ -59,7 +59,7 @@ Window Width = 688
 Window Z-Order = 5
 
 [File 0002]
-Path = "/c/Users/hp/Desktop/Server Demo/final/server.c"
+Path = "/i/CVI Demo/CVI_Demo/Server Demo/final/server.c"
 File Type = "CSource"
 Disk Date = 3584246096
 In Projects = "1,"
@@ -69,7 +69,7 @@ Window Z-Order = 4
 Source Window State = "1,19,38,38,18,21,21,0,0,80,0,0,0,0,0,17,19,0,37,66,335,688,1,0,"
 
 [File 0003]
-Path = "/c/Users/hp/Desktop/Server Demo/final/server.h"
+Path = "/i/CVI Demo/CVI_Demo/Server Demo/final/server.h"
 File Type = "Include"
 Disk Date = 3584244100
 In Projects = "1,"
@@ -79,7 +79,7 @@ Window Z-Order = 6
 Source Window State = "1,40,98,40,47,50,47,0,0,80,0,22,0,0,0,20,72,0,87,48,389,688,1,17,"
 
 [File 0004]
-Path = "/c/Users/hp/Desktop/Server Demo/final/communication.c"
+Path = "/i/CVI Demo/CVI_Demo/Server Demo/final/communication.c"
 File Type = "CSource"
 Disk Date = 3584141528
 In Projects = ""
@@ -89,17 +89,17 @@ Window Z-Order = 7
 Source Window State = "1,8,66,8,43,64,43,0,0,80,0,0,0,0,0,20,35,0,44,34,389,688,1,0,"
 
 [File 0005]
-Path = "/c/Users/hp/Desktop/Server Demo/final/dataProcess.c"
+Path = "/i/CVI Demo/CVI_Demo/Server Demo/final/dataProcess.c"
 File Type = "CSource"
 Disk Date = 3584248460
 In Projects = ""
 Window Top = 157
 Window Left = 74
 Window Z-Order = 1
-Source Window State = "1,82,82,82,16,40,40,0,0,138,0,0,0,0,0,32,69,0,82,35,335,688,1,0,"
+Source Window State = "1,82,82,82,16,40,40,0,0,138,0,0,0,0,0,32,59,0,83,72,335,688,1,0,"
 
 [File 0006]
-Path = "/c/Users/hp/Desktop/Server Demo/final/dataDisplay.c"
+Path = "/i/CVI Demo/CVI_Demo/Server Demo/final/dataDisplay.c"
 File Type = "CSource"
 Disk Date = 3584178150
 In Projects = ""
@@ -109,7 +109,7 @@ Window Z-Order = 11
 Source Window State = "1,66,91,66,76,68,76,0,0,80,0,57,0,0,0,17,60,0,74,68,335,688,1,20,"
 
 [File 0007]
-Path = "/c/Users/hp/Desktop/Server Demo/final/dataSave.c"
+Path = "/i/CVI Demo/CVI_Demo/Server Demo/final/dataSave.c"
 File Type = "CSource"
 Disk Date = 3584245944
 In Projects = ""
@@ -119,7 +119,7 @@ Window Z-Order = 3
 Source Window State = "1,135,136,136,90,56,56,0,0,80,0,0,0,0,0,20,117,0,135,90,389,688,1,0,"
 
 [File 0008]
-Path = "/c/Users/hp/Desktop/Server Demo/final/setting.c"
+Path = "/i/CVI Demo/CVI_Demo/Server Demo/final/setting.c"
 File Type = "CSource"
 Disk Date = 3584142349
 In Projects = ""
@@ -129,7 +129,7 @@ Window Z-Order = 8
 Source Window State = "1,0,0,0,0,0,0,0,0,80,0,0,0,0,0,20,0,0,0,0,389,688,1,0,"
 
 [File 0009]
-Path = "/c/Users/hp/Desktop/Server Demo/final/main.h"
+Path = "/i/CVI Demo/CVI_Demo/Server Demo/final/main.h"
 File Type = "Include"
 Disk Date = 3584247825
 In Projects = ""
@@ -139,7 +139,7 @@ Window Z-Order = 2
 Source Window State = "1,18,53,53,29,48,48,0,0,80,0,0,0,0,0,20,0,0,13,38,389,688,1,0,"
 
 [File 0010]
-Path = "/c/Users/hp/Desktop/Server Demo/final/control.c"
+Path = "/i/CVI Demo/CVI_Demo/Server Demo/final/control.c"
 File Type = "CSource"
 Disk Date = 3584163828
 In Projects = ""
@@ -149,7 +149,7 @@ Window Z-Order = 10
 Source Window State = "1,0,15,15,37,39,39,0,0,80,0,0,0,0,0,17,0,0,19,51,335,688,1,0,"
 
 [File 0011]
-Path = "/c/Users/hp/Desktop/Server Demo/final/dataSort.c"
+Path = "/i/CVI Demo/CVI_Demo/Server Demo/final/dataSort.c"
 File Type = "CSource"
 Disk Date = 3584150340
 In Projects = ""
@@ -240,6 +240,6 @@ Working Directory = ""
 
 [Distributions]
 Active Index = 1
-AbsCDSPath 0001 = "/c/Users/hp/Desktop/Server Demo/final/Server_1.cds"
+AbsCDSPath 0001 = "/i/CVI Demo/CVI_Demo/Server Demo/final/Server_1.cds"
 RelCDSPath 0001 = "Server_1.cds"
 

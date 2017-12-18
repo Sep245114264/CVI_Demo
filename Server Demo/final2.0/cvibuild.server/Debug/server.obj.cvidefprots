@@ -1,0 +1,92 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[MainPanel]
+Class="Function"
+Prototype="int MainPanel(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ButtonSetting]
+Class="Function"
+Prototype="int ButtonSetting(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ServerTCP]
+Class="Function"
+Prototype="int ServerTCP(unsigned int handle, int event, int error, void *callbackData);"
+
+[TimerTransmit]
+Class="Function"
+Prototype="int TimerTransmit(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TimerDisplay]
+Class="Function"
+Prototype="int TimerDisplay(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TimerSave]
+Class="Function"
+Prototype="int TimerSave(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CallSaveVoltage]
+Class="Function"
+Prototype="int CallSaveVoltage(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CallSaveTemperature]
+Class="Function"
+Prototype="int CallSaveTemperature(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CallSavePonding]
+Class="Function"
+Prototype="int CallSavePonding(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ResultVoltage]
+Class="Function"
+Prototype="int ResultVoltage(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ResultTemperature]
+Class="Function"
+Prototype="int ResultTemperature(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ResultPonding]
+Class="Function"
+Prototype="int ResultPonding(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[StartMonitor]
+Class="Function"
+Prototype="int StartMonitor(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[StopMonitor]
+Class="Function"
+Prototype="int StopMonitor(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ButtonClose]
+Class="Function"
+Prototype="int ButtonClose(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Panel_log]
+Class="Function"
+Prototype="int Panel_log(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Log]
+Class="Function"
+Prototype="int Log(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[PanelSetting]
+Class="Function"
+Prototype="int PanelSetting(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SaveSetting]
+Class="Function"
+Prototype="int SaveSetting(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ExportExcel]
+Class="Function"
+Prototype="int ExportExcel(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Register]
+Class="Function"
+Prototype="int Register(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[PanelInfo]
+Class="Function"
+Prototype="int PanelInfo(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+

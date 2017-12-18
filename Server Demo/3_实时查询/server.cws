@@ -1,6 +1,6 @@
 [Workspace Header]
 Version = 1201
-Pathname = "/c/Users/hp/Desktop/Server Demo/3_实时查询/server.cws"
+Pathname = "/i/CVI Demo/CVI_Demo/Server Demo/3_实时查询/server.cws"
 CVI Dir = "/d/national instruments/cvi2012"
 CVI Shared Dir = "/D/National Instruments/Shared/CVI"
 CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2012"
@@ -12,11 +12,11 @@ VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
 Number of Projects = 1
 Active Project = 1
 Project 0001 = "server.prj"
-Drag Bar Left = 207
+Drag Bar Left = 215
 Window Top = 31
-Window Left = 557
+Window Left = 639
 Window Bottom = 533
-Window Right = 1347
+Window Right = 1429
 Maximized = True
 Maximized Children = True
 Max32 Number Of Errors = 20
@@ -32,7 +32,7 @@ Break At First Statement = False
 Sort Type = "File Name"
 Number of Opened Files = 3
 Window Confinement Region Enabled = True
-MainColumnWidth = 190
+MainColumnWidth = 198
 FileDateColumnWidth = 70
 FileSizeColumnWidth = 70
 StatusColumnWidth = 70
@@ -48,7 +48,7 @@ Batch Build Debug = False
 Force Rebuild = False
 
 [File 0001]
-Path = "/c/Users/hp/Desktop/Server Demo/3_实时查询/server.uir"
+Path = "/i/CVI Demo/CVI_Demo/Server Demo/3_实时查询/server.uir"
 File Type = "User Interface Resource"
 Disk Date = 3582184939
 In Projects = "1,"
@@ -59,17 +59,17 @@ Window Width = 688
 Window Z-Order = 2
 
 [File 0002]
-Path = "/c/Users/hp/Desktop/Server Demo/3_实时查询/server.c"
+Path = "/i/CVI Demo/CVI_Demo/Server Demo/3_实时查询/server.c"
 File Type = "CSource"
 Disk Date = 3583387955
 In Projects = "1,"
 Window Top = 219
 Window Left = 106
 Window Z-Order = 1
-Source Window State = "1,162,162,162,0,4,4,0,0,139,0,3,0,3,0,32,157,0,169,26,389,640,1,0,"
+Source Window State = "1,162,162,162,0,4,4,0,0,138,0,3,0,3,0,32,157,0,169,26,389,640,1,0,"
 
 [File 0003]
-Path = "/c/Users/hp/Desktop/Server Demo/3_实时查询/server.h"
+Path = "/i/CVI Demo/CVI_Demo/Server Demo/3_实时查询/server.h"
 File Type = "Include"
 Disk Date = 3582184939
 In Projects = "1,"

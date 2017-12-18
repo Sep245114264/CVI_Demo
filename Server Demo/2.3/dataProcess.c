@@ -80,7 +80,7 @@ PackData unPack(unsigned char * pack_data)
 			else
 			{
 				unpack_data.data = -99;
-				return unpack_data.cata;
+				return unpack_data;
 			}
 			break;
 		case READ_STATE_PONDING:
